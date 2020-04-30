@@ -16,7 +16,7 @@ def test_connection():
     Returns:
         string -- tekstu ar datubāzes versiju
     """
-    dsn = "host={} dbname={} user={} password={}".format(ELEPHANT_HOST, ELEPHANT_NAME, ELEPHANT_NAME, ELEPHANT_PASSWORD)
+    dsn = "host={balarama.db.elephantsql.com} dbname={rwqewekt} user={rwqewekt} password={DZmBfUxb47RNJoG_R-jM8GeROdG9ZdDw}".format(ELEPHANT_HOST, ELEPHANT_NAME, ELEPHANT_NAME, ELEPHANT_PASSWORD)
     conn = psycopg2.connect(dsn)
     cur = conn.cursor()
     cur.execute("SELECT version();")
